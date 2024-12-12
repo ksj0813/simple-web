@@ -29,8 +29,8 @@ async function fetchData() {
 async function renderPosts() {
   // api 호출 결과
   // const response = await fetchData();
-  // const articles = response.articles;
-  // articles.map( article => posts.push(article));
+  const articles = response.articles;
+  articles.map( article => posts.push(article));
 
   const container = document.getElementById("posts-container");
   container.innerHTML = ""; // 기존 내용을 초기화
