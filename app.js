@@ -13,7 +13,7 @@ async function fetchData() {
   day = day < 10 ? `0${day}`: day;
   const formattedDate = `2024-12-${day}`;
   // 마지막 부분에 API_KEY를 발급받고 입력해주세요
-  const url = `https://newsapi.org/v2/everything?q=USA&from=${formattedDate}&sortBy=popularity&apiKey=${API_KEY}`;
+  const url = `https://newsapi.org/v2/everything?q=USA&from=${formattedDate}&sortBy=popularity&apiKey=${dd6f7f63fd8746c78995ffbd1fd49984}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
